@@ -84,7 +84,32 @@
             margin-left: 20px;
         }
     }
+    // &__arrow {
+    //     margin-top: 90px;
+    //     animation: arrowDown 2s infinite;
+    // }
     
+    
+}
+.intro__arrow {
+    margin-top: 90px;
+    animation: arrowDown 2s infinite;
+}
+@keyframes arrowDown {
+    0%{
+        bottom:30px;
+    }
+    50%{
+        bottom:0;
+    }
+    100%{
+        bottom:30px;
+    }
+}
+.icon-angle-down::before {
+    content: "\f107";
+    color:#fff;
+    font-size: 45px;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////// TESTIMONIALS
 .testimonials__inner {
@@ -174,12 +199,12 @@
         line-height: 22px;
         color:#212121;
         margin-top: 30px;
+        margin-bottom: 15px;
     }
     &__text {
         font-size: 15px;
         line-height: 25px;
         max-width: 280px;
-        margin-top: 15px;
         
     }
     &__button {
@@ -469,7 +494,7 @@
 .team__slider-item {
    
 }
-//////////////////////////////////////////////////////////////////////////////7/ BLOG
+/////////////////////////////////////////////////////////////////////////////// BLOG
 .blog {
     background-color: #e4fdf9;
     padding-bottom: 85px;
@@ -557,7 +582,7 @@
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7 FOOTER
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////FOOTER
 .footer {
     background-size: cover;
     background-repeat: no-repeat;
@@ -567,7 +592,7 @@
         color: #fff;
     }
     &__inner {
-        max-width: 1030px;
+    
     }
     &__items {
         display: flex;
@@ -616,7 +641,7 @@
         margin-bottom: 30px;
         
         input {
-            width: 500px;
+            width: 600px;
             min-height: 85px;
             border-radius:15px;
             padding-left: 20px;
@@ -659,3 +684,9 @@
     font-weight: 700;
     color:#212121;
 }
+
+
+
+
+
+@import 'media';

@@ -25,8 +25,29 @@ $(document).ready(function(){
         slidesToScroll: 3,
         dots:true,
         arrows:false,
-        dotsClass:'dots-style'
+        dotsClass:'dots-style',
+        responsive: [
+            {
+              breakpoint: 1151,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+                breakpoint: 801,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+              },
+        ]
       });
+      
 
     
 });
